@@ -15,8 +15,8 @@ namespace DisableDonComboVoice.Plugins
         [HarmonyPrefix]
         public static bool EnsoSound_KeyOnGameDonMekaVoice_Prefix(EnsoSound __instance, string toneName)
         {
-            Plugin.Log.LogInfo("");
-            Plugin.Log.LogInfo("EnsoSound_KeyOnGameDonMekaVoice_Prefix");
+            //Logger.Log("");
+            //Logger.Log("EnsoSound_KeyOnGameDonMekaVoice_Prefix");
 
             // removes the 50combo, 100combo, xxcombo voice
             // doesn't remove fullcombo voice
