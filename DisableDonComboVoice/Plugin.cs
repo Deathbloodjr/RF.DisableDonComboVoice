@@ -131,8 +131,8 @@ namespace DisableDonComboVoice
             plugin.AssignLoadFunction(LoadPlugin);
             plugin.AssignUnloadFunction(UnloadPlugin);
             //plugin.AssignReloadSaveFunction(ReloadPlugin);
-            plugin.AssignConfigSetupFunction(SetupConfig);
-            plugin.AddToManager();
+            //plugin.AssignConfigSetupFunction(SetupConfig);
+            plugin.AddToManager(ConfigEnabled.Value);
         }
 
         private bool IsSaveManagerLoaded()
